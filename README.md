@@ -1,4 +1,5 @@
 Interior Design Backend
+
 This is the backend for an Interior Design application built with Node.js, Express, and MongoDB. It provides API endpoints to manage room types used in the interior design process.
 
 
@@ -6,9 +7,10 @@ This backend uses the following technologies:
 
 Node.js - JavaScript runtime for the server.
 Express - Web framework for Node.js to handle routing and middleware.
-MongoDB - NoSQL database to store room types.
-Mongoose - ODM (Object Data Modeling) library for MongoDB and Node.js.
+MongoDB - NoSQL database to store room types. (was not able to ge this to work)
+Mongoose - ODM (Object Data Modeling) library for MongoDB and Node.js. (was not able to get this to work)
 Cors - Middleware to handle Cross-Origin Resource Sharing (CORS).
+
 Getting Started
 Follow these steps to get the backend running locally.
 
@@ -16,36 +18,21 @@ Installation
 Clone the repository to your local machine:
 
 
-git clone https://github.com/yourusername/interior-design-backend.git
-cd interior-design-backend
+git clone https://github.com/amberimani34/Capstone-Backend.git
+cd Capstone-Backend
 Install dependencies:
 
 You need Node.js installed on your machine. You can install dependencies using npm:
 
 
 npm install
-Set up MongoDB:
 
-Make sure you have a running instance of MongoDB. You can either set it up locally or use a cloud-based service like MongoDB Atlas.
-
-If you are using MongoDB Atlas, make sure to replace the MongoDB URI in the .env file (see below).
-
-Create a .env file:
-
-Create a .env file in the root directory of your project and add the following (replace with your actual MongoDB URI):
-
-
-MONGODB_URI=mongodb://localhost:27017/interior_design
-PORT=5000
-MONGODB_URI: The connection string to your MongoDB database.
-PORT: The port your server will run on (default is 5000).
-Run the application:
 
 After completing the above steps, start the server using the following command:
 
 
-npm start
-The backend will start running on http://localhost:5000.
+node index.js
+The backend will start running on http://localhost:5001.
 
 Testing the API
 You can test the API using Postman or curl to make requests to the endpoints listed below.
@@ -147,5 +134,4 @@ Example Response:
 Environment Variables
 You can configure the following environment variables for your backend:
 
-MONGODB_URI: The URI for your MongoDB database. If you're using MongoDB Atlas, get the connection string from your Atlas dashboard.
-PORT: The port where the server will run (default: 5000).
+Since MongoDb is not working, you will pull the data from the created RESTful API data. This is connected to the frontend through the DESIGN ROOM page.
