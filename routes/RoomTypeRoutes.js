@@ -1,12 +1,11 @@
 
 const express = require('express');
-const RoomType = require('../data/roomtype'); // Import the RoomType model
 const router = express.Router();
 
 // Get all room types
 router.get('/api/roomtypes', async (req, res) => {
   try {
-    const roomTypes = await RoomType.find();
+    const roomTypes = await roomTypes.find();
     res.json(roomTypes);
   } catch (error) {
     res.status(500).json({ message: 'Error fetching room types' });

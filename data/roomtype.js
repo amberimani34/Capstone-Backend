@@ -1,4 +1,3 @@
-const { Router } = require("express");
 // const mongoose = require('mongoose');
 
 // // Schema
@@ -132,7 +131,7 @@ const roomTypes = [
         height: 10
       },
       features: ["kids desk", "kids chairs", "storage shelves", "artwork", "rug"],
-      image: "https://delivery.gettyimages.com/downloads/483097318?k=20&e=5RrSbTFIWN_jQzCcjCnMci-jes-Bmqij7njIO_XnXN_gygXXhj4MaHmcy_-cFrVd2FJ9eAtpZacIpi-k068MgyUuE66xDZk7FmYDS8cU-cQ=",
+      image: "https://images.pexels.com/photos/8088099/pexels-photo-8088099.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
   ];
 
