@@ -1,4 +1,4 @@
-// const mongoose = require('mongoose');
+// const mongoose = require('mongoose'); - could not get mongodb to connect
 
 // // Schema
 // const roomTypeSchema = new mongoose.Schema({
