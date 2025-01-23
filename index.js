@@ -9,6 +9,7 @@ const cors = require('cors');
 // const RoomTypes = require("./routes/RoomTypeRoutes");
 // const RoomItems = require("./routes/RoomItemRoutes");
 const roomTypes = require("./data/roomtype")
+const roomItems = require("./data/roomitem")
 
 
 
@@ -30,9 +31,14 @@ app.get('/api/roomtypes', (req, res) => {
   res.json(roomTypes);
 });
 
-// app.get('/api/roomitems', (req, res) => {
-//     res.json({message: 'Room items!'});
-// });
+// create new roomtype
+app.get('/api/roomtypes/new', (req, res) => {
+  res.render('roomTypes/New');
+})
+
+app.get('/api/roomitems', (req, res) => {
+    res.json(roomItems);
+});
 
 app.get('/', (req, res) => {
   res.send(
